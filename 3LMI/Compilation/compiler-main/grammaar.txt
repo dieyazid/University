@@ -1,0 +1,33 @@
+
+integer     : [0123456789]+.[0123456789]+
+float       : [0123456789]+
+letters     : [A-Z a-z]*
+letter      : [A-Z a-z]?
+
+statement   : class IDENTIFIER { func }
+
+function    : public static void main () { code }
+            : code
+        
+code        : (int|float) IDENTIFIER (= DIGIT;|;)
+            : char IDENTIFIER (= 'letter';|;)
+            : String IDENTIFIER (= "letters";|;)
+            : scanner
+            : System.out.println(expr)
+            : if-expr
+
+expr        : integer?
+            : letter
+            : float
+
+
+scanner     : Scanner IDENTIFIER = new Scanner(System.in);
+            : int IDENTIFIER = IDENTIFIER.nextInt();
+            : float IDENTIFIER = IDENTIFIER.nextFloat();
+            : String IDENTIFIER = IDENTIFIER.nextLine();
+
+
+if-expr     : if ( expr = expr ) { code } (else-expr|;)
+
+
+else-expr   : else { code };
