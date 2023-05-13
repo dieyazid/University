@@ -1,0 +1,3 @@
+/home/yazid/Desktop/Github/University/1MIAD/Expert System/C++/Inference engine/cmake-build-debug/CMakeFiles/Inference_engine.dir
+/home/yazid/Desktop/Github/University/1MIAD/Expert System/C++/Inference engine/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yazid/Desktop/Github/University/1MIAD/Expert System/C++/Inference engine/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,5 @@
+# ninja log v5
+1	561	1682366679605095592	CMakeFiles/Inference_engine.dir/tp.cc.o	b6e3abd75025ceff
+1	712	1682366679753098138	CMakeFiles/Inference_engine.dir/main.cc.o	ba462db68aea29f2
+1	27	1682366760366454194	build.ninja	cfa7a00cb98f5cda
+0	20	1682366760366454194	build.ninja	cfa7a00cb98f5cda

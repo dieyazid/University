@@ -19,7 +19,13 @@ bool Chainage_avant_profonder(vector<Rule>& rules, string goal,vector<Fact>&fact
 
 int main() {
     vector<Rule> rules;
-    ifstream reglestxt("regles.txt");
+    // print all txt files in the current directory and wait for user file name
+    cout << "======================================"<<  endl;
+    system("ls");
+    cout << "======================================"<<  endl;
+    string fileName;cout << "Enter the name of the file you want to open: ";
+    cin >> fileName;cin.ignore();
+    ifstream reglestxt(fileName);
 
     if (!reglestxt.is_open()) {
         cout << "There was an error while opening the file" << endl;

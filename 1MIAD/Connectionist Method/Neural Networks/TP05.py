@@ -3,7 +3,6 @@ import random
 import matplotlib.pyplot as plt
 
 Table = []
-
 def fill ():
     for indx in range(100):
         X.append([0] * 3)
@@ -55,15 +54,12 @@ def gradient(X,Y,w,dw) :
     g[1] = (b-h)/dw # pente dans la 2e coordonnée
     return g # retourne le vecteur de gradient
 
-
 def L(X,Y,w) :
     s = 0
     for i in range(0,2) :
         # print(i)
-        s = s + pow(Y[i]-w[i],2)
+        s = s + pow(Y[i]-YP[i],2)
     return s/2
-
-
 # /////////////////   PROGRAMME PRINCIPAL    //////////////////////////
 # X : Tableau des entrées
 # Y : Tableau des sorties désirées
@@ -93,7 +89,6 @@ for epoch in range(n):
 print("Affichage des poids optimals :")
 print("Wfinal[ 0, 1,  2  ]:")
 print(T)
-#PLot the LW with Y sacle as symlog
 plt.plot(LW)
 plt.show()
 
